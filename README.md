@@ -74,7 +74,7 @@ It also initializes and builds the workspace.
 ### ROS 2
 - Open the ros2 folder in VSCode. 
 - Click the ´Reopen in Container´ or ´Rebuild the container´ popup given by Dev Container extension.
-- Select the appropriate devcontainer.json file for your usage. (e.g UR-Students if you want to use it for the HRL lab)
+- Select the appropriate devcontainer.json file for your usage. 
 
 ## Create a workspace for a specific setup
 
