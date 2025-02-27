@@ -33,12 +33,15 @@
     "runArgs": [
         "--net=host",
         "-e", "DISPLAY=${env:DISPLAY}",
-        "--gpus", "all"
+        "--gpus", "all",
+        "--runtime=nvidia",
+        "--privileged"
     ],
     "mounts": [
         "source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached",
         "source=/dev/dri,target=/dev/dri,type=bind,consistency=cached",
-        "source=${localEnv:HOME}/.ssh,target=/home/${localEnv:USER}/.ssh,type=bind"
+        "source=${localEnv:HOME}/.ssh,target=/home/${localEnv:USER}/.ssh,type=bind",
+        "source=/dev,destination=/dev,type=bind"
     ],
     "initializeCommand": "sh ./.devcontainer/base-humble/initialize.sh",
     "postCreateCommand": "sh ./.devcontainer/base-humble/postCreate.sh"
