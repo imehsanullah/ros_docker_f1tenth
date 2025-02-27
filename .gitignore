@@ -1,0 +1,10 @@
+# root
+/.vscode/
+
+# ros1
+/ros1/ws/
+
+# ros2
+/ros2/ws/
+/ros2/object_placement/
+
