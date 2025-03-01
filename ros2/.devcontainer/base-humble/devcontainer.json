@@ -6,9 +6,9 @@
         "dockerfile": "humble_fortress_moveit.dockerfile",
         "args": {
             "USERNAME": "${localEnv:USER}",
-            "DOCKER_REPO": "osrf/ros",
+            "DOCKER_REPO": "arm64v8/ros",
             "ROS_DISTRO": "humble",
-            "IMAGE_SUFFIX": "-desktop-full"
+            "IMAGE_SUFFIX": "-ros-base"
         }
     },
     "workspaceFolder": "/home/${localEnv:USER}/ros2",
